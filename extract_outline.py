@@ -216,13 +216,7 @@ def extract_outline(pdf_path):
     if not sizes:
         return {
             'title': '', 
-            'outline': [],
-            'languages': {
-                'primary_language': primary_language,
-                'detected_languages': [{'language': lang, 'confidence': round(score, 2)} 
-                                     for lang, score in detected_languages[:3]],
-                'is_multilingual': is_multilingual_doc
-            }
+            'outline': []
         }
     unique_sizes = sorted(set(sizes), reverse=True)
     top_sizes = unique_sizes[:10]
@@ -230,13 +224,7 @@ def extract_outline(pdf_path):
     if not lines:
         return {
             'title': '', 
-            'outline': [],
-            'languages': {
-                'primary_language': primary_language,
-                'detected_languages': [{'language': lang, 'confidence': round(score, 2)} 
-                                     for lang, score in detected_languages[:3]],
-                'is_multilingual': is_multilingual_doc
-            }
+            'outline': []
         }
 
     from collections import Counter
@@ -364,8 +352,7 @@ def extract_outline(pdf_path):
 
     return {
         'title': title.strip(), 
-        'outline': outline,
-        'languages': languages_info
+        'outline': outline
     }
 
 def process_pdfs():
@@ -401,11 +388,6 @@ def process_pdfs():
                 error_result = {
                     'title': '',
                     'outline': [],
-                    'languages': {
-                        'primary_language': 'english',
-                        'detected_languages': [{'language': 'english', 'confidence': 100.0}],
-                        'is_multilingual': False
-                    },
                     'error': str(e)
                 }
                 output_filename = filename.replace('.pdf', '.json')

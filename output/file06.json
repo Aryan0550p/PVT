@@ -126,15 +126,5 @@
       "text": "English",
       "page": 14
     }
-  ],
-  "languages": {
-    "primary_language": "english",
-    "detected_languages": [
-      {
-        "language": "english",
-        "confidence": 100.0
-      }
-    ],
-    "is_multilingual": false
-  }
+  ]
 }

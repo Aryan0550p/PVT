@@ -241,19 +241,5 @@
       "text": "PRIVACY POLICY | TERMS OF USE",
       "page": 6
     }
-  ],
-  "languages": {
-    "primary_language": "french",
-    "detected_languages": [
-      {
-        "language": "french",
-        "confidence": 0.54
-      },
-      {
-        "language": "german",
-        "confidence": 0.54
-      }
-    ],
-    "is_multilingual": true
-  }
+  ]
 }

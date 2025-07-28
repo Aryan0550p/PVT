@@ -186,15 +186,5 @@
       "text": "Appendix C: ODL’s Envisioned Electronic Resources",
       "page": 13
     }
-  ],
-  "languages": {
-    "primary_language": "english",
-    "detected_languages": [
-      {
-        "language": "english",
-        "confidence": 100.0
-      }
-    ],
-    "is_multilingual": false
-  }
+  ]
 }
