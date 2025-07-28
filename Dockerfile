@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir pdfminer.six==20231228
 
 # Copy application code
 COPY process_pdfs.py .
-COPY extract_outline_backup.py .
+COPY extract_outline.py .
 
 # Create input and output directories with proper permissions
 RUN mkdir -p /app/input /app/output && \

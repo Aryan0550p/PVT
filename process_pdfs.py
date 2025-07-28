@@ -18,7 +18,7 @@ import os
 from pathlib import Path
 
 # Import the main extraction function from our comprehensive solution
-from extract_outline_backup import process_pdfs
+from extract_outline import process_pdfs
 
 def main():
     """Main entry point for Adobe Hackathon solution"""
