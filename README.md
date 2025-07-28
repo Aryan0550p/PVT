@@ -286,14 +286,7 @@ Multi-criteria approach:
       "text": "Heading Text",
       "page": 0
     }
-  ],
-  "languages": {
-    "primary_language": "english",
-    "detected_languages": [
-      {"language": "english", "confidence": 100.0}
-    ],
-    "is_multilingual": false
-  }
+  ]
 }
 ```
 
