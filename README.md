@@ -92,17 +92,7 @@ Each PDF generates a corresponding JSON file with the following structure:
       "text": "string",         // Heading text content
       "page": "number"          // Page number (0-indexed)
     }
-  ],
-  "languages": {               // Language detection results
-    "primary_language": "string",           // Main detected language
-    "detected_languages": [                 // Top 3 detected languages
-      {
-        "language": "string",               // Language name
-        "confidence": "number"              // Confidence percentage
-      }
-    ],
-    "is_multilingual": "boolean"           // Multi-language indicator
-  }
+  ]
 }
 ```
 
