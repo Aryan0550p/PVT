@@ -1,13 +1,169 @@
-# PDF Outline Extractor - Adobe India Hackathon 2025 Challenge 1a
+# Adobe India Hackathon 2025 - Challenge 1a: PDF Outline Extractor
 
-## Overview
-This is a comprehensive solution for Challenge 1a of the Adobe India Hackathon 2025. The solution extracts structured outlines (Title, H1-H4 headings with page numbers) from PDFs and outputs JSON files with multilingual support.
+## Solution Overview
 
-## Official Challenge Guidelines Compliance
+This solution implements an advanced PDF outline extraction system that processes PDF documents and generates structured JSON outputs containing titles, hierarchical outlines, and language detection information. The system is designed to work offline with high performance and supports multilingual document processing.
 
-### Submission Requirements ✅
-- **GitHub Project**: Complete code repository with working solution
-- **Dockerfile**: Present in root directory and fully functional
+## Key Features
+
+- **Advanced PDF Processing**: Extracts structured outlines (Title, H1-H4 headings) with page numbers
+- **Language Detection**: Identifies primary language and multilingual content with confidence scores
+- **Hierarchical Structure**: Maintains proper document hierarchy with level-based classification
+- **High Performance**: Processes documents within 10-second constraint for 50-page PDFs
+- **Offline Operation**: Works completely offline without internet access
+- **Docker Containerized**: Fully containerized solution with AMD64 compatibility
+
+## Libraries and Dependencies
+
+### Core PDF Processing
+- **pdfminer.six (v20231228)**: Primary PDF parsing and text extraction library
+  - Handles complex PDF layouts, fonts, and text positioning
+  - Extracts character-level formatting information (font size, style, positioning)
+  - Supports various PDF versions and encoding formats
+
+### Language Detection
+- **Built-in Enhanced Language Detector**: Custom implementation supporting:
+  - Unicode character range analysis for non-Latin scripts (Chinese, Japanese, Korean, Arabic, Russian, Hindi)
+  - Accent-based detection for European languages (French, Spanish, German, Portuguese, Italian)
+  - Statistical analysis with confidence scoring
+  - Multilingual document detection
+
+### Text Processing
+- **Python Standard Library**:
+  - `re`: Regular expressions for pattern matching and text cleaning
+  - `json`: JSON output formatting and serialization
+  - `os`: File system operations and directory management
+
+## Architecture
+
+### PDF Analysis Pipeline
+1. **Text Extraction**: Extract all text with character-level formatting information
+2. **Font Analysis**: Analyze font sizes, styles, and properties to identify headings
+3. **Language Detection**: Process full document text for language identification
+4. **Heading Classification**: Use font size, boldness, and formatting to classify heading levels
+5. **Structure Generation**: Build hierarchical outline with proper page numbering
+6. **JSON Output**: Generate structured output matching required schema
+
+### Heading Detection Algorithm
+- **Font Size Analysis**: Identifies top 10 unique font sizes for heading candidates
+- **Bold Text Detection**: Recognizes bold formatting patterns across different fonts
+- **ALLCAPS Recognition**: Detects all-caps text commonly used for headings
+- **Contextual Filtering**: Removes table headers, dates, and non-content elements
+- **Multi-line Merging**: Combines consecutive heading lines with same formatting
+
+### Language Processing
+- **Character-based Detection**: Analyzes Unicode character ranges for script identification
+- **Statistical Thresholds**: Uses optimized thresholds for accurate language detection
+- **Multilingual Support**: Handles documents containing multiple languages
+- **Confidence Scoring**: Provides percentage-based confidence for detected languages
+
+## Build Instructions
+
+### Build Command
+```bash
+docker build --platform linux/amd64 -t pvt.pdfoutlineextractor .
+```
+
+### Run Command
+```bash
+docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output/pdfoutlineextractor/:/app/output --network none pvt.pdfoutlineextractor
+```
+
+## Performance Specifications
+
+- **Processing Time**: ≤ 10 seconds for 50-page PDFs
+- **Memory Usage**: Optimized for ≤ 16GB RAM constraint
+- **CPU Architecture**: AMD64 compatible
+- **Network Requirements**: Completely offline operation
+- **Input Handling**: Read-only access to input directory
+- **Concurrent Processing**: Efficient handling of multiple PDF files
+
+## Output Format
+
+Each PDF generates a corresponding JSON file with the following structure:
+
+### JSON Schema
+```json
+{
+  "title": "string",           // Main document title
+  "outline": [                 // Hierarchical outline array
+    {
+      "level": "H1|H2|H3|H4",  // Heading level
+      "text": "string",         // Heading text content
+      "page": "number"          // Page number (0-indexed)
+    }
+  ],
+  "languages": {               // Language detection results
+    "primary_language": "string",           // Main detected language
+    "detected_languages": [                 // Top 3 detected languages
+      {
+        "language": "string",               // Language name
+        "confidence": "number"              // Confidence percentage
+      }
+    ],
+    "is_multilingual": "boolean"           // Multi-language indicator
+  }
+}
+```
+
+### Supported Output Languages
+- English, French, Spanish, German, Portuguese, Italian
+- Chinese, Japanese, Korean
+- Arabic, Russian, Hindi
+- Automatic fallback to English for unidentified languages
+
+## Testing and Validation
+
+### Test Coverage
+- **Simple PDFs**: Basic document structures with clear headings
+- **Complex PDFs**: Multi-column layouts, mixed fonts, embedded images
+- **Large Documents**: 50+ page documents for performance validation
+- **Multilingual PDFs**: Documents containing multiple languages
+- **Technical Documents**: Academic papers, reports, manuals
+
+### Performance Validation
+- Tested on AMD64 architecture with 8 CPUs and 16GB RAM
+- Verified offline operation with `--network none`
+- Confirmed sub-10-second processing for complex 50-page documents
+- Memory usage optimized and tested within constraints
+
+## Project Structure
+
+```
+adobe_n1/
+├── Dockerfile                    # Docker container configuration
+├── requirements.txt              # Python dependencies
+├── process_pdfs.py              # Main processing entry point
+├── extract_outline_backup.py    # Core PDF processing logic
+├── README.md                    # This documentation
+├── input/                       # Input PDF directory
+│   ├── file01.pdf through file07.pdf
+├── output/                      # Output JSON directory
+│   ├── file01.json through file07.json
+└── .vscode/                     # VS Code configuration
+    └── tasks.json               # Build and run tasks
+```
+
+## Solution Highlights
+
+### Advanced Features
+- **German Vocabulary Detection**: Specialized detection for German language learning materials
+- **Table Header Filtering**: Intelligent removal of table headers and metadata
+- **Multi-line Title Support**: Handles complex document titles spanning multiple lines
+- **Font Consistency Analysis**: Uses statistical analysis for reliable heading detection
+- **Error Handling**: Robust error handling with graceful fallbacks
+
+### Open Source Compliance
+- All libraries and dependencies are open source
+- No proprietary or licensed components
+- Complete source code transparency
+- MIT/Apache compatible licensing
+
+## Author
+
+**Aryan Desai**  
+Repository: PVT (github.com/Aryan0550p/PVT)  
+Adobe India Hackathon 2025 - Challenge 1a Submission
 - **README.md**: Comprehensive documentation explaining solution, models, and libraries
 
 ### Build Command

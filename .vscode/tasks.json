@@ -4,7 +4,7 @@
     {
       "label": "Run PDF Outline Extractor",
       "type": "shell",
-      "command": "docker build --platform linux/amd64 -t pdfoutlineextractor:dev . && docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none pdfoutlineextractor:dev",
+      "command": "docker build --platform linux/amd64 -t pvt.pdfoutlineextractor . && docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output/pdfoutlineextractor/:/app/output --network none pvt.pdfoutlineextractor",
       "group": "build",
       "problemMatcher": []
     }
