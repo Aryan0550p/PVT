@@ -1,0 +1,259 @@
+{
+  "title": "German Core 2000 Word List",
+  "outline": [
+    {
+      "level": "H4",
+      "text": "15 WORDS",
+      "page": 0
+    },
+    {
+      "level": "H4",
+      "text": "Search",
+      "page": 0
+    },
+    {
+      "level": "H4",
+      "text": "ausziehen (v)",
+      "page": 0
+    },
+    {
+      "level": "H4",
+      "text": "take off",
+      "page": 0
+    },
+    {
+      "level": "H4",
+      "text": "HIDE 2 EXAMPLES",
+      "page": 0
+    },
+    {
+      "level": "H2",
+      "text": "anprobieren (v)",
+      "page": 0
+    },
+    {
+      "level": "H4",
+      "text": "einen Anzug anprobieren",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "etwas anprobieren",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "anziehen (v)",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "put on",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "HIDE 5 EXAMPLES",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "einen Mantel anziehen",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Kleidung anziehen",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "put on clothes",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "nicht zusammenpassen (v)",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "nicht zusammenpassen mit",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Wäsche waschen",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "wash clothes",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "1 EXAMPLE",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "nähen (v)",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "HIDE 3 EXAMPLES",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "Kleider nähen",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "sewing clothes",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "ﬂicken (v)",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "mend",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "stricken (v)",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "HIDE 4 EXAMPLES",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "eine Mütze stricken",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "knit a hat",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "Stricknadel",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "knitting needle",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "färben (v)",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "sich das Haar färben",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "dye one's hair",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "ein Kleidungsstück anpassen",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "zusammenpassen mit (v)",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "go with",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "match",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "abstimmen (v)",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "Socken abstimmen",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "match your socks",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "Waschen fem (v)",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "LEARN GERMAN",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "ABOUT US",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "HELP CENTER",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "FOLLOW US",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "Like 64K",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "PRIVACY POLICY | TERMS OF USE",
+      "page": 6
+    }
+  ],
+  "languages": {
+    "primary_language": "french",
+    "detected_languages": [
+      {
+        "language": "french",
+        "confidence": 0.54
+      },
+      {
+        "language": "german",
+        "confidence": 0.54
+      }
+    ],
+    "is_multilingual": true
+  }
+}

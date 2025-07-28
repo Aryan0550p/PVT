@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run PDF Outline Extractor",
+      "type": "shell",
+      "command": "docker build --platform linux/amd64 -t pdfoutlineextractor:dev . && docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none pdfoutlineextractor:dev",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "title": "Basics of German: A Brief Introduction to the",
+  "outline": [
+    {
+      "level": "H3",
+      "text": "German A1 Level",
+      "page": 0
+    },
+    {
+      "level": "H3",
+      "text": "Alphabet",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Basic Phrases",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "Es tut mir leid ~ I’m sorry",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "Entschuldigen Sie ~ Excuse me",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "Number System",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "twelve, every number has a specific name.",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "with Zehn (10).",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "Intro to German Grammar",
+      "page": 7
+    },
+    {
+      "level": "H4",
+      "text": "Nouns",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "Examples:",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "Definite articles",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "Masculine-der (definite)",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "Feminine- die (definite)",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "Masculine",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "-ein Zahnarzt~ a dentist",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "-ein Polizist ~ a policeman",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "Feminine",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "-eine Tante ~ an aunt",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "-eine Zahnärztin ~ a dentist",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "Basic German Sentence Structure",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "-Wir spielen Fußball. ~ We play soccer.",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "German Questions",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "Self-Introduction",
+      "page": 13
+    },
+    {
+      "level": "H4",
+      "text": "English",
+      "page": 14
+    }
+  ],
+  "languages": {
+    "primary_language": "english",
+    "detected_languages": [
+      {
+        "language": "english",
+        "confidence": 100.0
+      }
+    ],
+    "is_multilingual": false
+  }
+}

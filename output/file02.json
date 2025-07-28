@@ -1,0 +1,70 @@
+{
+  "title": "International Software Testing Qualifications Board",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Overview",
+      "page": 0
+    },
+    {
+      "level": "H1",
+      "text": "Foundation Level Extensions",
+      "page": 0
+    },
+    {
+      "level": "H3",
+      "text": "Revision History",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Table of Contents",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": ".........................................",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "4. References",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Acknowledgements",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "1. Introduction to the Foundation Level Extensions",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "2. Introduction to Foundation Level Agile Tester Extension",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "Syllabus Days",
+      "page": 7
+    },
+    {
+      "level": "H4",
+      "text": "Identifier Reference",
+      "page": 11
+    }
+  ],
+  "languages": {
+    "primary_language": "english",
+    "detected_languages": [
+      {
+        "language": "english",
+        "confidence": 100.0
+      }
+    ],
+    "is_multilingual": false
+  }
+}
